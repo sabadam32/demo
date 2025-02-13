@@ -22,7 +22,7 @@ setup.bat
 ```bash
 source .venv/bin/activate
 ```
-or for Windows
+or for Windows you should already be activated after running the Setup.bat file.  If you ever need to activate the environment use:
 ```cmd
 venv/Scripts/Activate.bat
 ```
