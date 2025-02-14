@@ -1,7 +1,7 @@
 class Accounts:
 
     # These would all be stored in a secure secret manager IRL, and would never be checked into source control.
-    # Since they are displayed publicly on the demo site, I didn't worry aboout security here.
+    # Since they are displayed publicly on the demo site, I didn't worry about security here.
     STANDARD_USER = 'standard_user'
     LOCKED_OUT_USER = 'locked_out_user'
     PROBLEM_USER = 'problem_user'
