@@ -34,5 +34,5 @@ pytest -v
 ```
 To open the browser window while the tests are running use:
 ```bash
-pytest -v --headless
+pytest -v --headed
 ```
