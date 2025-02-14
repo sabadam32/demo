@@ -53,7 +53,7 @@ Page objects are all found in the **pages** folder.  This is the top level of th
 All tests will be found in the **tests** folder.  I am using Pytest for this demo which will find all tests automatically in this folder and run them.  The test files can be setup in different ways.  I chose to group the tests by user flow. Since we are concerned with the checkout flow for this demo, all tests will be in the `test_checkout.py` file
 
 ## ${\textsf{\color{orangered}Test Descriptions}}$
-1. *test_happy_path_checkout* - Validates that a user can add an item to the cart and checkout.  This test has multiple assertions to ensure that each step succeeds.
+1. *test_happy_path_checkout* - Validates that a user can add an item to the cart and checkout.  This test has multiple assertions to ensure that each step succeeds.  I used a parameterized test here to try the flow with all the possible users.
 2. *test_must_login_to_shop* - One of the negative scenarios is that we canot shop without logging in first.
 3. *test_must_enter_user_information* - We must enter user information before we checkout
 4. *test_cannot_bypass_user_information_step* - Since all fields are required this screen should not be able to be bypassed. ${\textsf{\color{red}Fails}}$
