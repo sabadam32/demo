@@ -6,6 +6,7 @@ import pytest
 
 @pytest.fixture(scope="function", autouse=True)
 def set_up(page: Page):
+    page.set_default_timeout(10000)
     Driver.base_url = "https://www.saucedemo.com"
     Driver.page = page
     yield
