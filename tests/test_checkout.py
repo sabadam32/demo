@@ -12,8 +12,8 @@ import pytest
 
 @pytest.fixture()
 def set_up(page: Page):
-    Driver.set_base_url('https://www.saucedemo.com')
-    Driver.set_driver(page)
+    Driver.base_url = 'https://www.saucedemo.com'
+    Driver.page = page
     yield
 
     Driver.page.close()
