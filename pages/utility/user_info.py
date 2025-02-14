@@ -1,2 +1,3 @@
 class UserInfo:
-    TEST_USER = ['Lester', 'Tester', '90210']
+    class TestUser:
+        first_name, last_name, zip = "Lester", "Tester", "90210"
