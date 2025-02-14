@@ -8,7 +8,7 @@ class Checkout:
 
     def __init__(self) -> None:
 
-        self._url = "/checkout-step-one.html"
+        self._url = "/checkout-"
         self.page = Driver.page
         
         self.first_name = self.page.locator("[data-test='firstName']")
@@ -24,7 +24,7 @@ class Checkout:
         self._load()
         
     def _load(self) -> None:
-        if self.page.url != f"{Driver.base_url}{self._url}":
+        if self._url not in self.page.url:
             self.page.goto(f"{Driver.base_url}{self._url}")
         
     def as_user(self, first_name: str, last_name: str, zip: str) -> Self:
