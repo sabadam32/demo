@@ -19,25 +19,16 @@ It is mostly the same between Windows and Mac / Linux, but there are setup scrip
 git clone https://github.com/sabadam32/demo.git
 cd demo
 ```
-2. Run the secup script to bootstrap the environment.
+2. Run the script to bootstrap the environment and execute the tests.
 ```bash
-./setup.sh
+./run.sh
 ```
 or for Windows
 ```cmd
-setup.bat
+run.bat
 ```
-3. Activate the environment and run the tests.
-```bash
-source .venv/bin/activate
-```
-or for Windows you should already be activated after running the Setup.bat file.  If you ever need to activate the environment use:
-```cmd
-venv/Scripts/Activate.bat
-```
-4. Execute the tests by running the pytest command.  
 
-To run them without opening the browser use:
+To run tests manually without opening the browser run:
 ```bash
 pytest -v
 ```
