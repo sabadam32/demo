@@ -1,5 +1,5 @@
 
-# ${\textsf{\color{darkorange} Demo - Coding Exercise }}$
+# ${\textsf{\color{darkorange}Demo - Coding Exercise}}$
 
 This is the demo for the swaglabs test site.  The exercise focuses on the checkout flow, but the framework is build to easily add additional tests for other scenarios.
 
